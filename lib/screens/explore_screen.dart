@@ -48,7 +48,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
 }
 
 
-/////////////  the code below Also works ;)  , thanks to ChatGpt /////////////
+/////////////  the code below Also works ;)  , Thanks to ChatGpt /////////////
 
 
 // import 'package:flutter/cupertino.dart';
