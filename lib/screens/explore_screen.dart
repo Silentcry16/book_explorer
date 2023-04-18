@@ -23,7 +23,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       appBar: CustomAppBar(),
       body: SingleChildScrollView(
         child: Container(
-          height: Dimensions.screenHeight,
+          // height: Dimensions.screenHeight,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

@@ -18,7 +18,7 @@ class _GridViewCategoryState extends State<GridViewCategory> {
       padding: const EdgeInsets.only(left: 12, right: 12, bottom: 15),
       margin: const EdgeInsets.only(top: 18),
       width: Dimensions.screenwidth,
-      // height: 600,
+      // height: 800,
       child: GridView.builder(
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
