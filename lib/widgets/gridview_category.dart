@@ -21,7 +21,7 @@ class _GridViewCategoryState extends State<GridViewCategory> {
       // height: 800,
       child: GridView.builder(
         shrinkWrap: true,
-        physics: const NeverScrollableScrollPhysics(),
+        physics:const ClampingScrollPhysics(),
         itemCount: bookList.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3, // Number of columns in the grid
