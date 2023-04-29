@@ -1,3 +1,4 @@
+import 'package:book_explore_sale/utils/const_color.dart';
 import 'package:book_explore_sale/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 

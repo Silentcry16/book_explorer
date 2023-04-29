@@ -22,8 +22,8 @@ class LibraryListview extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          margin: const EdgeInsets.only(left: 15, top: 11),
-          padding: EdgeInsets.only(left: 5),
+          margin: const EdgeInsets.only(top: 11),
+          padding: const EdgeInsets.only(left: 15),
           width: Dimensions.screenwidth,
           height: 220,
           //listview

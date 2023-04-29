@@ -16,20 +16,18 @@ class _GridviewLibraryState extends State<GridviewLibrary> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(
-          horizontal: Dimensions.width10, vertical: Dimensions.height10),
-      width: Dimensions.screenwidth,
-      // height: 500,
+      // color: Colors.amber,
+      padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 16),
       child: GridView.builder(
         shrinkWrap: true,
         physics: const ClampingScrollPhysics(),
         itemCount: bookList.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            crossAxisSpacing: Dimensions.screenwidth / 130.66,
-            mainAxisSpacing: Dimensions.height10,
-            childAspectRatio: 2,
-            mainAxisExtent: Dimensions.screenHeight / 6.48),
+            crossAxisSpacing: 2,
+            mainAxisSpacing: 10,
+            childAspectRatio: 10,
+            mainAxisExtent: 85),
         itemBuilder: (context, i) => BookItemLibrary(book: bookList[i]),
       ),
     );

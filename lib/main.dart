@@ -1,3 +1,4 @@
+import 'package:book_explore_sale/screens/book_detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,7 +19,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:const HomeScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomeScreen(),
+        BookDetailScreen.routName: (context) => BookDetailScreen(),
+      },
     );
   }
 }
