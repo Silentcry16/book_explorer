@@ -85,6 +85,10 @@ class Book {
     ];
   }
 
+  Book findbookData(String bookId) {
+    return bookData().firstWhere((book) => book.id == bookId);
+  }
+
 //List of book instance for gategory screen
   static List<Book> myWishList() {
     return [

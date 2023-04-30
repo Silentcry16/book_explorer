@@ -9,13 +9,15 @@ class DetailsAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Container(
-      margin: const EdgeInsets.symmetric(horizontal: 34, vertical: 8),
+      padding: const EdgeInsets.only(bottom: 30, left: 10, right: 10, top: 30),
       width: double.infinity,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+            },
             child: Image.asset('assets/icons/back.png'),
           ),
           GestureDetector(

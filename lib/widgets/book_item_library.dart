@@ -12,7 +12,7 @@ class BookItemLibrary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.of(context).pushNamed(BookDetailScreen.routName),
+      onTap: () => Navigator.of(context).pushNamed(BookDetailScreen.routName,arguments: book.id),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
