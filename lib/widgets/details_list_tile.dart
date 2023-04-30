@@ -6,7 +6,7 @@ class DetailsListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20),
+      margin: const EdgeInsets.symmetric(vertical: 20),
       // color: Colors.amber,
       width: 330,
       height: 77,
@@ -17,38 +17,38 @@ class DetailsListTile extends StatelessWidget {
           CircleAvatar(
             child: Image.asset('assets/images/profile.png'),
           ),
-          SizedBox(
+          const SizedBox(
             width: 12,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              TitleText(
+              const TitleText(
                   text: 'Dust Jacket',
                   size: 20,
                   weight: FontWeight.w700,
                   color: ConstColor.secondary),
-              TitleText(
+              const TitleText(
                   text: 'By Pisco Pirinto',
                   size: 12,
                   weight: FontWeight.w400,
                   color: Colors.black),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              Container(
+              SizedBox(
                 width: 150,
                 height: 15,
                 child: Row(
                   children: [
                     ...List.generate(
                         5,
-                        (index) => Icon(
+                        (index) => const Icon(
                               Icons.star,
                               color: Colors.amber,
                               size: 15,
                             )),
-                    TitleText(
+                    const TitleText(
                         text: '| 1500 Reader',
                         size: 12,
                         weight: FontWeight.w600,
@@ -58,13 +58,12 @@ class DetailsListTile extends StatelessWidget {
               )
             ],
           ),
-          Expanded(child: SizedBox.shrink()),
-          Container(
-              child: TitleText(
-                  text: '\$100',
-                  size: 20,
-                  weight: FontWeight.w700,
-                  color: ConstColor.primary)),
+          const Expanded(child: SizedBox.shrink()),
+          const TitleText(
+              text: '\$100',
+              size: 20,
+              weight: FontWeight.w700,
+              color: ConstColor.primary),
         ],
       ),
     );
