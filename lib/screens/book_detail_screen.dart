@@ -1,6 +1,7 @@
 import 'package:book_explore_sale/models/book.dart';
 import 'package:book_explore_sale/widgets/details_app_bar.dart';
 import 'package:book_explore_sale/widgets/details_header.dart';
+import 'package:book_explore_sale/widgets/details_list_tile.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailScreen extends StatefulWidget {
@@ -20,6 +21,7 @@ class _BookDetailScreenState extends State<BookDetailScreen> {
         children: [
           const DetailsAppBar(),
           const DetailHead(),
+          DetailsListTile(),
         ],
       ),
     );
