@@ -3,6 +3,8 @@ import 'package:book_explore_sale/widgets/title_text.dart';
 import 'package:flutter/material.dart';
 
 class DetailsListTile extends StatelessWidget {
+  const DetailsListTile({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
